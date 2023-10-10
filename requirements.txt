@@ -1,3 +1,14 @@
-Django==4.1.7
-django-extensions==3.2.1
+Django
+django-extensions
 ipython
+bpython
+#Snippets
+##Инструкция по развертыванию проекта
+python3 -m venv venv_name - создание виртуального окружения
+source venv_name/bin/activate - активация ВО
+pip install -r requirements.txt - установка пакетов для ВО
+python manage.py migrate - с помощью миграций создаем нужные таблицы в БД
+python manage.py runserver - запуск сервера
+
+##Запуск терминала в контексте django
+python manage.py shell_plus --ipython
